@@ -26,19 +26,30 @@ export default function Hero() {
           Lance <span className="text-white">Ma</span>
         </h1>
 
+      <div className="relative mt-4 h-[1.5rem]"> 
+        {/* Invisible placeholder to prevent jump */}
+        <span className={`invisible absolute text-xl text-gray-200 font-serif font-bold ${libreBaskerville.className}`}>
+          Computer Science at Purdue University
+        </span>
+
         <TypeAnimation
           preRenderFirstString={true}
-          sequence = {["Coffee & Matcha Lover", 1000, "Solo Traveller", 1200, "Software Engineer", 1000, "Computer Science at Purdue University", 1000 ]}
+          sequence={[
+            "Coffee & Matcha Lover",
+            1000,
+            "Solo Traveller",
+            1200,
+            "Software Engineer",
+            1000,
+            "Computer Science at Purdue University",
+            1000,
+          ]}
           speed={55}
-          className={`mt-4 text-xl text-gray-200 font-serif font-bold ${libreBaskerville.className}`}
+          className={`text-xl text-gray-200 font-serif font-bold ${libreBaskerville.className}`}
           repeat={1}
           cursor={false}
         />
-
-        {/* <h2 className={`mt-4 text-xl text-gray-200 font-serif font-bold ${libreBaskerville.className}`}
-      >
-          Computer Science at Purdue University
-        </h2> */}
+      </div>
 
         
 
