@@ -10,7 +10,7 @@ const openSans = Open_Sans({
 
 const lora = Lora({
   subsets: ['latin'],
-  weight: ["400"],
+  weight: ["400", "500", "600"],
   display: 'swap',
 })
 
@@ -27,7 +27,7 @@ export default function Education() {
             Purdue University <span className="text-xl font-normal">August 2021 - Present</span>
           </h3>
 
-          <p className="text-lg py-0">West Lafayette, Indiana</p>
+          <p className={`text-lg py-0 ${lora.className}`}>West Lafayette, Indiana</p>
 
           <p className={`p-0 m-0 text-lg ${lora.className}`}>
             <strong>Major:</strong> Computer Science
@@ -35,9 +35,9 @@ export default function Education() {
           <p className={`p-0 text-lg ${lora.className}`}>
             <strong>Minor:</strong> Korean Studies
           </p>
-          <h4 className={`underline mt-4 font-semibold text-lg ${lora.className}`}>Relevant Coursework</h4>
+          <h4 className={`underline mt-4 text-lg ${lora.className}`}>Relevant Coursework</h4>
 
-          <ul className={`font-normal list-disc list-inside ${lora.className}`}>
+          <ul className={`text-base list-disc list-inside ${lora.className}`}>
             <li>CS 40700 - Software Engineering Senior Project</li>
             <li>CS 38100 - Algorithms</li>
             <li>CS 35400 - Operating Systems</li>

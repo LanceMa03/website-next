@@ -27,17 +27,18 @@ export default function Hero() {
           Lance <span className="text-white">Ma</span>
         </h1>
 
-        <h2 className={`mt-4 text-xl text-gray-300 font-serif font-bold ${libreBaskerville.className}`}>
+        <h2 className={`mt-4 text-xl text-gray-200 font-serif font-bold ${libreBaskerville.className}`}
+      >
           Computer Science at Purdue University
         </h2>
 
         
       </div>
       <div className=" text-3xl mb-5 animate-bounce">
-                <a href="#aboutme" className="text-white">
-                  <FontAwesomeIcon  icon={faArrowDown} />
-                </a>
-              </div>
+          <a href="#aboutme" className="text-white">
+            <FontAwesomeIcon  icon={faArrowDown} />
+          </a>
+      </div>
 
     </header>
   );

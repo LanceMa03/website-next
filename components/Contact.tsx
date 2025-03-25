@@ -6,6 +6,7 @@ import { Open_Sans, Poppins } from 'next/font/google'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { useEffect } from 'react';
+import Footer from "./Footer";
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -23,7 +24,7 @@ const poppins = Poppins({
 
 export default function Contact() {
   return (
-    <section id="contactSection" className=" {backgroundColor:rgb(17, 18, 19))} text-white py-20 px-6">
+    <section id="contactSection" className="text-white min-h-fit pt-20 pb-35" style={{backgroundColor: 'rgb(17, 18, 19)' }}>
       <div className="max-w-6xl mx-auto text-center space-y-8">
  
         <h1 className={`text-2xl font-bold tracking-wider ${openSans.className}`} style={{letterSpacing: '0.4rem'}}>CONTACT ME</h1>
@@ -34,14 +35,14 @@ export default function Contact() {
               <FontAwesomeIcon icon={faInstagram} className="text-6xl mb-2" />
               <p className={`font-bold ${openSans.className} text-lg`} style={{color: '#f99a47'}}>Follow Me</p>
 
-              <div className={`${poppins.className} text-base`}style={{color: 'rgb(167, 159, 142)'}}> 
-                <a href="https://www.instagram.com/1ance_ma/" target="_blank">
-                  Instagram
-                </a>
-                <br />
+              <div className={`${poppins.className} text-base`}style={{color: 'rgb(167, 159, 142)'}}>
                 <a href="https://github.com/LanceMa03" target="_blank">
                   GitHub
-                </a>
+                </a> 
+                <br />
+                <a href="https://www.instagram.com/1ance_ma/" target="_blank">
+                  Instagram
+                </a>              
               </div>
             </div>
             
@@ -64,10 +65,9 @@ export default function Contact() {
               </a>
             </div>
             
-    
-
         </div>
       </div>
+ 
     </section>
   );
 }
