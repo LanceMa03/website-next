@@ -33,6 +33,7 @@ export default function Hero() {
         </h2>
 
         
+        
       </div>
       <div className=" text-3xl mb-5 animate-bounce">
           <a href="#aboutme" className="text-white">
