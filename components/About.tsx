@@ -40,7 +40,7 @@ export default function About() {
             <div>
               <strong>고향:</strong> 샌프란시스코, 캘리포니아
             </div>
-            <Image src="/images/pfp.jpg" alt="Profile" className="w-72 h-72 object-cover rounded-2xl mt-6" />
+            <Image src="/images/pfp.jpg" width={500} height={500} alt="Profile" className="w-72 h-72 object-cover rounded-2xl mt-6" />
           </div>
 
           <div className={`basis-2/3 text-lg leading-relaxed flex-1 space-y-4 text-justify ${sourceSans.className} font-sans`}>
