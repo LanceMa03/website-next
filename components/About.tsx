@@ -1,6 +1,7 @@
 'use client ';
 
 import { Open_Sans, Source_Sans_3 } from 'next/font/google'
+import Image from 'next/image'
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -39,26 +40,26 @@ export default function About() {
             <div>
               <strong>고향:</strong> 샌프란시스코, 캘리포니아
             </div>
-            <img src="/images/pfp.jpg" alt="Profile" className="w-72 h-72 object-cover rounded-2xl mt-6" />
+            <Image src="/images/pfp.jpg" alt="Profile" className="w-72 h-72 object-cover rounded-2xl mt-6" />
           </div>
 
           <div className={`basis-2/3 text-lg leading-relaxed flex-1 space-y-4 text-justify ${sourceSans.className} font-sans`}>
            
-              <p>I'm a student at Purdue University majoring in Computer Science with a minor in Korean Studies. Growing up in San Francisco,
-                    I've been fascinated with the growing tech industry in front of my eyes. This, combined with my passion for
+              <p>I&apos;m a student at Purdue University majoring in Computer Science with a minor in Korean Studies. Growing up in San Francisco,
+                    I&apos;ve been fascinated with the growing tech industry in front of my eyes. This, combined with my passion for
                     computers and video games, I knew that I wanted to pursue my degree in computer science. 
-                    I'm interested in software development and exploring how machine learning and AI can shape the future and
-                    impact people's day to day lives. 
+                    I&apos;m interested in software development and exploring how machine learning and AI can shape the future and
+                    impact people&apos;s day to day lives. 
                 </p>
     
-                <p>Outside the classroom, I'm apart of The Data Mine where I am working with Lockheed Martin to develop a Generative Adversarial Network that uses AI/ML to conduct automated cyber anonomaly detection. Additionally, I'm apart of VIP on the Education Technology Development team where I am assisting with
-                    the development of an "Intro to Physical Computing" course.
+                <p>Outside the classroom, I&apos;m apart of The Data Mine where I am working with Lockheed Martin to develop a Generative Adversarial Network that uses AI/ML to conduct automated cyber anonomaly detection. Additionally, I&apos;m apart of VIP on the Education Technology Development team where I am assisting with
+                    the development of an &quot;Intro to Physical Computing&quot; course.
                 </p>
     
                 <p>I will also be a Software Engineering Intern at Capital One this summer.</p>
 
                 <p>You can usually find me in my room coding away into the night while listening to my favorite
-                    playlists on Spotify. If you don’t find me coding, I'll probably be out and about travelling to a new city, on the beach watching the sunset.
+                    playlists on Spotify. If you don&apos;t find me coding, I&apos;ll probably be out and about travelling to a new city, on the beach watching the sunset.
                     Besides my love for coding and coffee, I also enjoy playing the occasional match of League of Legends and binge watching the latest hit k-drama(s) on Netflix.
                 </p>
     

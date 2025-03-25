@@ -3,10 +3,6 @@ import { faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Open_Sans, Poppins } from 'next/font/google'
 
-import 'aos/dist/aos.css';
-import AOS from 'aos';
-import { useEffect } from 'react';
-import Footer from "./Footer";
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -59,7 +55,7 @@ export default function Contact() {
 
             <div>
               <FontAwesomeIcon icon={faLinkedin} className="text-6xl mb-2" />
-              <p className={`font-bold ${openSans.className} text-lg`} style={{color: '#f99a47'}}>Let's Connect</p>
+              <p className={`font-bold ${openSans.className} text-lg`} style={{color: '#f99a47'}}>Let&apos;s Connect</p>
               <a href="https://www.linkedin.com/in/lance-ma/" target="_blank" className={`${poppins.className} text-base`} style={{color: 'rgb(167, 159, 142)'}}>
                 LinkedIn
               </a>

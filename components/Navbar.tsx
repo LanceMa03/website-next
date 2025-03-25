@@ -1,17 +1,11 @@
 'use client';
 import { useEffect, useState } from 'react';
 
-import { Open_Sans, Libre_Baskerville } from 'next/font/google'
+import { Open_Sans } from 'next/font/google'
 
 const openSans = Open_Sans({
   subsets: ['latin'],
   weight: ["700"],
-  display: 'swap',
-})
-
-const libreBaskerville = Libre_Baskerville({
-  subsets: ['latin'],
-  weight: ["400"],
   display: 'swap',
 })
 
