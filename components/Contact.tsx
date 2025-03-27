@@ -23,12 +23,12 @@ export default function Contact() {
     <section id="contactSection" className="text-white min-h-fit pt-20 pb-35" style={{backgroundColor: 'rgb(17, 18, 19)' }}>
       <div className="max-w-6xl mx-auto text-center space-y-8">
  
-        <h1 className={`text-2xl font-bold tracking-wider ${openSans.className}`} style={{letterSpacing: '0.4rem'}}>CONTACT ME</h1>
+        <h1 className={`text-xl sm:text-2xl font-bold tracking-wider ${openSans.className}`} style={{letterSpacing: '0.4rem'}}>CONTACT ME</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-sm text-gray-300 leading-5 text-center">
 
             <div>
-              <FontAwesomeIcon icon={faInstagram} className="text-6xl mb-2" />
+              <FontAwesomeIcon icon={faInstagram} className="text-5xl sm:text-6xl mb-2" />
               <p className={`font-bold ${openSans.className} text-lg`} style={{color: '#f99a47'}}>Follow Me</p>
 
               <div className={`${poppins.className} text-base`}style={{color: 'rgb(167, 159, 142)'}}>
@@ -43,7 +43,7 @@ export default function Contact() {
             </div>
             
             <div>
-              <FontAwesomeIcon icon={faEnvelope} className="text-6xl mb-2" />
+              <FontAwesomeIcon icon={faEnvelope} className="text-5xl sm:text-6xl mb-2" />
               <p className={`font-bold ${openSans.className} text-lg`} style={{color: '#f99a47'}} >Email</p>
               <div className={`${poppins.className} text-base`}style={{color: 'rgb(167, 159, 142)'}}>
                 <a href="mailto:ma718@purdue.edu">ma718@purdue.edu</a>
@@ -54,7 +54,7 @@ export default function Contact() {
            
 
             <div>
-              <FontAwesomeIcon icon={faLinkedin} className="text-6xl mb-2" />
+              <FontAwesomeIcon icon={faLinkedin} className="text-5xl sm:text-6xl mb-2" />
               <p className={`font-bold ${openSans.className} text-lg`} style={{color: '#f99a47'}}>Let&apos;s Connect</p>
               <a href="https://www.linkedin.com/in/lance-ma/" target="_blank" className={`${poppins.className} text-base`} style={{color: 'rgb(167, 159, 142)'}}>
                 LinkedIn

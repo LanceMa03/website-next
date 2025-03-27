@@ -20,15 +20,15 @@ export default function Hero() {
   return (
     <header
       id="home"
-      className="h-screen flex flex-col justify-between items-center bg-cover bg-center text-white bg-[url('/images/bg2.jpg')]">
+      className="min-h-screen flex flex-col justify-between items-center bg-cover bg-center text-white bg-[url('/images/bg2.jpg')]">
       <div className="flex-1 flex flex-col justify-center items-center text-center">
-        <h1 className={`text-8xl font-bold tracking-tight drop-shadow-lg ${openSans.className}`}>
+        <h1 className={`text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold tracking-tight drop-shadow-lg ${openSans.className} `}>
           Lance <span className="text-white">Ma</span>
         </h1>
 
       <div className="relative mt-4 h-[1.5rem]"> 
         {/* Invisible placeholder to prevent jump */}
-        <span className={`invisible absolute text-xl text-gray-200 font-serif font-bold ${libreBaskerville.className}`}>
+        <span className={`invisible absolute text-3xl sm:text-4xl md:text-6xl lg:text-8xl text-gray-200 font-serif font-bold ${libreBaskerville.className}`}>
           Computer Science at Purdue University
         </span>
 
@@ -45,7 +45,7 @@ export default function Hero() {
             1000,
           ]}
           speed={55}
-          className={`text-xl text-gray-200 font-serif font-bold ${libreBaskerville.className}`}
+          className={`text-base sm:text-lg md:text-xl text-gray-200 font-serif font-bold ${libreBaskerville.className}`}
           repeat={1}
           cursor={false}
         />
@@ -54,9 +54,8 @@ export default function Hero() {
         
 
       </div>
-      <div className=" text-3xl mb-5 animate-bounce">
+      <div className="text-2xl sm:text-3xl mb-5 animate-bounce">
           <a href="#aboutme" className="text-white">
-            {/* <FontAwesomeIcon  icon={faArrowDown} /> */}
             <i className="fas fa-arrow-down"></i>
           </a>
       </div>

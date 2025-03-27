@@ -38,9 +38,6 @@ export default function About() {
             <div>
               <strong>최애 카페 음료:</strong> 말차 라떼 🍵
             </div>
-            {/* <div>
-              <strong>한국어 공부 기간:</strong> 2.5년 📚
-            </div> */}
             <div>
               <strong>성격:</strong> 조용하지만 따뜻한 사람 😊
             </div>
@@ -49,7 +46,7 @@ export default function About() {
             <Image src="/images/pfp.jpg" width={500} height={500} alt="Profile" className="w-72 h-72 object-cover rounded-2xl mt-6" />
           </div>
 
-          <div className={`basis-2/3 text-lg leading-relaxed flex-1 space-y-4 text-justify ${sourceSans.className} font-sans`}>
+          <div className={`basis-2/3 text-lg leading-relaxed tracking-tight sm:tracking-normal flex-1 space-y-4 text-justify ${sourceSans.className} font-sans mt-5 md:mt-0`}>
            
               <p>I&apos;m a student at Purdue University majoring in Computer Science with a minor in Korean Studies. Growing up in the Bay Area,
                     I&apos;ve been fascinated with the evolving tech industry in front of my eyes. This, combined with my interest in video games and problem-solving skills is what drew me to computer science. 
@@ -72,7 +69,6 @@ export default function About() {
                     </a>
                    .
                 </p>
-
 
           </div>
         </div>
