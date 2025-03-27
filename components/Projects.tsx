@@ -28,12 +28,12 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projectsSection" className="bg-[#222] text-white py-20 px-6 w-full h-full">
+    <section id="projectsSection" className="bg-[#222] text-white py-20 px-6 w-full min-h-full">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-center text-2xl font-bold tracking-wider mb-12" style={{letterSpacing: '0.4rem'}}>PROJECTS</h1>
+        <h1 className="text-center text-xl sm:text-2xl font-bold tracking-wider mb-12" style={{letterSpacing: '0.4rem'}}>PROJECTS</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
           {projects.map((project) => (
-            <div key={project.title} className="bg-[#1e1e1e] p-6 rounded-lg shadow-lg hover:-translate-y-1 transition">
+            <div key={project.title} className="w-full max-w-sm mx-auto bg-[#1e1e1e] p-6 rounded-lg shadow-lg hover:-translate-y-1 transition">
 
               <div className="text-4xl mb-4 text-center">
                 <FontAwesomeIcon icon={project.iconName} />
