@@ -59,7 +59,10 @@ export default function About() {
                 <p>I will also be a Software Engineering Intern at Capital One this summer.</p>
 
                 <p>You can usually find me in my room mindlessly scrolling into night while listening to my favorite
-                    playlists on Spotify. Otherwise, I&apos;ll probably be out and about travelling to a new city, going for a walk, or watching the sunset somewhere.
+                    playlists on <a href="https://lance-spotify-tracker.vercel.app/" className='font-semibold'>
+                    Spotify</a>. 
+                    
+                    Otherwise, I&apos;ll probably be out and about travelling to a new city, going for a walk, or watching the sunset somewhere.
                     Besides my love for coding and coffee, I also enjoy playing the occasional match of League of Legends and binge watching the latest hit k-drama(s) on Netflix.
                 </p>
     
