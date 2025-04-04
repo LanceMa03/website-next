@@ -7,7 +7,6 @@ import AOS from 'aos';
 import { useEffect } from 'react';
 
 
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     AOS.init({
@@ -27,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         crossOrigin="anonymous"
         referrerPolicy="no-referrer"
       />
+      <link rel="icon" href="/images/favicon.jpg" />
       </head>
       <body>{children}</body>
     </html>

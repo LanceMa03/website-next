@@ -46,7 +46,7 @@ export default function Hero() {
           ]}
           speed={55}
           className={`text-base sm:text-lg md:text-xl text-gray-200 font-serif font-bold ${libreBaskerville.className}`}
-          repeat={1}
+          repeat={0}
           cursor={false}
         />
       </div>
