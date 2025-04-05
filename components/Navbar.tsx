@@ -42,6 +42,11 @@ export default function Navbar() {
           </a>
         </li>
         <li>
+          <a href="#travel" className={` ${scroll? 'hover:text-gray-300' : 'hover:text-orange-400'}  `}>
+            TRAVELS
+          </a>
+        </li>
+        <li>
           <a href="#educationSection" className={` ${scroll? 'hover:text-gray-300' : 'hover:text-orange-400'}  `}>
             EDUCATION
           </a>
