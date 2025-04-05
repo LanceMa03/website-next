@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         crossOrigin="anonymous"
         referrerPolicy="no-referrer"
       />
-      <link rel="icon" href="/images/favicon.jpg" />
+      <link rel="icon" href="../images/favicon.jpg" />
       </head>
       <body>{children}</body>
     </html>
