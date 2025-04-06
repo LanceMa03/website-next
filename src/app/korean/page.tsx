@@ -56,7 +56,7 @@ export default function KoreanPage() {
                     </div>
 
                     <div className="text-xs text-center mt-5 text-gray-400 italic">
-                     Runner Up for Purdue's 2025 Korean Speech Contest
+                     Runner Up for Purdue&apos;s 2025 Korean Speech Contest
                     </div>
                     
                 </div>
