@@ -2,6 +2,7 @@
 
 import { Open_Sans, Source_Sans_3 } from 'next/font/google'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -48,7 +49,11 @@ export default function About() {
 
           <div className={`basis-2/3 text-lg leading-relaxed tracking-tight sm:tracking-normal flex-1 space-y-4 text-justify ${sourceSans.className} font-sans mt-5 md:mt-0`}>
            
-              <p>I&apos;m a student at Purdue University majoring in Computer Science with a minor in Korean Studies. Growing up in the Bay Area,
+              <p>I&apos;m a student at Purdue University majoring in Computer Science with a minor in {' '}
+                <Link href={"/korean"} className="font-semibold">
+                    Korean Studies
+                </Link>
+                    . Growing up in the Bay Area,
                     I&apos;ve been fascinated with the evolving tech industry in front of my eyes. This, combined with my interest in video games and problem-solving skills is what drew me to computer science. 
                     I&apos;m interested in software development and exploring how machine learning and AI can shape the future and impact people&apos;s day to day lives. 
                 </p>

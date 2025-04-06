@@ -11,15 +11,25 @@ const notoSansKR = Noto_Sans_KR({
 export default function KoreanPage() {
     return (
         <div className="min-h-screen flex flex-col justify-between items-center py-13 px-6 w-full h-full {backgroundColor: rgb(25, 27, 28))}">
-            
-            <div className={`max-w-4xl w-full mx-auto flex flex-col items-center ${notoSansKR.className} `}>
 
-                <div className="text-center text-2xl font-bold mb-5 text-white">
+            <a className="absolute top-2 left-2 w-fit text-sm text-gray-50 px-3 py-1 rounded-lg shadow-md hover:bg-zinc-700 transition " href="https://lance-ma-website.vercel.app//#aboutme">
+                ← Back
+            </a>
+            
+            <div className={`max-w-[69rem] w-full mx-auto flex flex-col items-center ${notoSansKR.className} `}>
+
+                <div className="text-center text-2xl font-semibold mb-5 text-white">
                     혼자 여행의 매력
                 </div>
 
-                <div className="mr-auto mb-2 text-base text-white">
-                    <strong>이름:</strong>  랑스 마
+                <div className="flex flex-col mr-auto mb-2 text-base text-white">
+                    <div>
+                        <strong>이름:</strong> 랑스 마
+                    </div>
+                    
+                    <div>
+                        <strong>날짜:</strong> 2025년 3월 29일
+                    </div>
                 </div>
                 
                 <div className="mt-5 text-white text-lg">
@@ -30,7 +40,7 @@ export default function KoreanPage() {
                     </div>
 
                     <div className="mb-4">
-                    우선, 혼자 여행하면 새로운 경험할 수 있는 기회가 많습니다. 생소한 환경을 경험하고 평소에 하지 않는 활동도 할 수 있습니다.  이런 경험들은 나를 더 성장하게 만들고 여행의  즐거움 더해 줍니다.  
+                    일단, 혼자 여행하면 새로운 경험할 수 있는 기회가 많습니다. 생소한 환경을 경험하고 평소에 하지 않는 활동도 할 수 있습니다.  이런 경험들은 나를 더 성장하게 만들고 여행의  즐거움 더해 줍니다.  
                     </div>
 
                     <div className="mb-4">
