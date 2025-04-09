@@ -9,30 +9,29 @@ on:
     branches: main
 
 
+jobs:
+  Build_and_Deploys_App:
+    runs-on: ubuntu-latest
 
-  jobs:
-    Build and Deploys App:
-      runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout the latest version of main'
+        uses: actions/checkout@v4
 
-      steps:
-        - name: 'Checkout the latest version of main'
-          uses: actions/checkout@v4
+      - name: 'Install dependencies'
+        run: npm ci
 
-        - name: 'Install dependencies'
-          run: npm ci
+      - name: 'Builds the app'
+        run: npm build
 
-        - name: 'Builds the app'
-          run: npm build
+      - name: 'Install vercel'
+        run: npm install --global vercel@latest
 
-        - name: 'Install vercel'
-          run: npm install --global vercel@latest
+      - name: 'Pull Vercel Env Info'
+        run:  vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
 
-        - name: 'Pull Vercel Env Info'
-          run:  vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
-
-        - name: 'Build Project Artifacts'
-          run:  vercel build --token=${{ secrets.VERCEL_TOKEN }}
-        
-        - name: 'Deploy Project Artifacts to Vercel'
-          run:  vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
-    
+      - name: 'Build Project Artifacts'
+        run:  vercel build --token=${{ secrets.VERCEL_TOKEN }}
+      
+      - name: 'Deploy Project Artifacts to Vercel'
+        run:  vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
+  
