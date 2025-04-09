@@ -8,6 +8,7 @@ const notoSansKR = Noto_Sans_KR({
     display: "swap",
 });
 
+
 export default function KoreanPage() {
     return (
         <div className="min-h-screen flex flex-col justify-between items-center py-13 px-6 w-full h-full {backgroundColor: rgb(25, 27, 28))}">
