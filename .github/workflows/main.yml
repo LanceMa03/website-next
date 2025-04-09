@@ -22,7 +22,7 @@ jobs:
         run: npm ci
 
       - name: 'Builds the app'
-        run: npm build
+        run: npm run build
 
       - name: 'Install vercel'
         run: npm install --global vercel@latest
